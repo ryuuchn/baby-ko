@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>for my baby ♡</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="hearts"></div>
+
+  <button class="music-button" id="musicButton">♫ music: off</button>
+
+  <main class="container">
+
+    <section class="screen active" id="cover">
+      <div class="cover-card">
+        <div class="small-heart">♡</div>
+        <p class="eyebrow">SORRY, BABI</p>
+        <h1>hi, babi ko.</h1>
+        <p class="subtitle">
+          this is what i’ve been working on, kaya nga sabi ko sayo nagco-code ako hehe. sorry rin po for keeping you up this late, gusto ko lang sana ma-send sayo before ka mag-sleep since kanina ko pa rin naman siya ginagawa hehe
+        </p>
+        <button class="main-button" id="openLetter">click here ♡</button>
+        <p class="tiny-note">i hope u forgive me na</p>
+      </div>
+    </section>
+
+    <section class="screen" id="letter">
+      <div class="letter-card">
+        <p class="eyebrow">A LITTLE LETTER FOR YOU</p>
+        <p class="script-greeting">hi, baby.</p>
+        <h2>i’m really sorry, baby ko :&lt;</h2>
+
+        <div class="letter-text">
+          <p>
+            hi, babi. i wanna apologize lang for falling asleep :&lt; and for not being able to suyuin you. i hope you can see po na i'm trying din. i just want to feel lang din po na you're willing to put your pride aside somehow, even if it's hard, especially kapag may misunderstanding tayo or may isa satin na may mali. kasi i would do the same for you naman, babi, kasi i love you.
+          </p>
+
+          <p>
+            i was hurt lang po kaya hindi muna kita kinausap, kasi it felt like you were making it seem na parang ang laki-laki ng kasalanan ko, when i didn't mean to hurt you naman :&lt; i don't want us to feel like we have to choose between our pride and fixing things. i want us to meet halfway, listen to each other, and make an effort kahit mahirap minsan, kasi ganun din naman ang gagawin ko for you. i don't wanna lose you.
+          </p>
+
+          <p>
+            i'm really sorry po ulit sa nangyari, kasi po nakasleep ako, and sa hindi ko agad pagsuyo or lambing sayo. i know i could've handled things better, and i'll try to communicate instead of keeping things to myself. i hope po you can also do the same. thank you for being patient with me, babi. i love you po, i'll do better po, promise. i'm really sorry ulit.
+          </p>
+        </div>
+
+        <button class="main-button" data-next="memories">next ♡</button>
+      </div>
+    </section>
+
+    <section class="screen" id="memories">
+      <div class="memories-card">
+        <p class="eyebrow">A LITTLE COLLECTION OF YOU</p>
+        <h2>fave pics ko from you.</h2>
+        <p class="subtitle">nakaka-heart attack tong part na to kasi ganda mo huehue ^^</p>
+
+        <div class="photo-gallery">
+          <figure>
+            <img src="assets/her-photo-1.jpg" alt="My pretty baby">
+            <figcaption>palaging maganda oh</figcaption>
+          </figure>
+
+          <figure>
+            <img src="assets/her-photo-2.jpg" alt="My favorite view">
+            <figcaption>my favorite view</figcaption>
+          </figure>
+
+          <figure>
+            <img src="assets/her-photo-3.jpg" alt="My current favorite picture">
+            <figcaption>current fave pic ko sayo hehe :&gt;</figcaption>
+          </figure>
+        </div>
+
+        <div class="video-card" id="videoCard">
+          <p class="video-caption">ito ba yung nagiging video editor pag inlove? JAHJAHSJHSA</p>
+          <video
+            id="surpriseVideo"
+            controls
+            autoplay
+            muted
+            playsinline
+            loop
+            preload="auto"
+          >
+            <source src="assets/apology-video.mp4" type="video/mp4">
+            your browser does not support this video.
+          </video>
+        </div>
+
+        <button class="main-button" data-next="ending">last na ♡</button>
+      </div>
+    </section>
+
+    <section class="screen" id="ending">
+      <div class="ending-card">
+        <p class="eyebrow">VIRTUAL HUG MUNA</p>
+        <div class="ending-heart">♡</div>
+        <h2>i’ll hug u din irl hehe soon.</h2>
+
+        <p class="ending-text">
+          thank you so much for loving me, baby. kahit po may times na grabe yung away natin, sana piliin pa rin nating ayusin and intindihin isa't-isa. i love you so much po, and i'll do better for you, promise. miss na miss na kita, babi ko :((
+        </p>
+
+        <button class="main-button" id="hugButton">click mo to hehe</button>
+
+        <img
+          class="hug-gif"
+          id="hugGif"
+          src="assets/virtual-hug.gif"
+          alt="Bubu and Dudu hugging"
+          hidden
+        >
+
+        <p class="gif-caption" id="gifCaption" hidden>
+          bubu and dudu yan oh. us yan hehe ♡
+        </p>
+
+        <p class="hug-message" id="hugMessage" aria-live="polite"></p>
+
+        <button class="text-button" id="restart">read it again ↺</button>
+        <p class="final-note">i love you so much ♡</p>
+      </div>
+    </section>
+
+  </main>
+
+  <audio id="backgroundMusic" loop preload="auto">
+    <source src="assets/music.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
